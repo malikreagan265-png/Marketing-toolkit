@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>The Complete Marketing Manager Toolkit — $247</title>
+<meta name="description" content="All four tools in one: Budget Allocator, ROI Proof Kit, Data Pull Cheat Sheet, and Content Planning OS. The complete system for marketing managers who want to stop guessing and start proving."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700;900&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#0A0806;
+  --bg2:#100E0A;
+  --bg3:#181410;
+  --rule:#2A2420;
+  --rule2:#3A3028;
+  --text:#E8E0D4;
+  --text2:#9A8E80;
+  --text3:#5A504A;
+  --gold:#D4A420;
+  --gold2:#F0C040;
+  --gold-dim:#D4A42015;
+  --red:#C8382A;
+  --teal:#2A8A72;
+  --violet:#7A4AB0;
+  --blue:#2A5A9A;
+  --green:#2A7A4A;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Lora',serif;
+  font-size:16px;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-thumb{background:var(--gold)}
+
+/* NAV */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(10,8,6,0.95);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--rule);
+  padding:16px 48px;
+  display:flex;justify-content:space-between;align-items:center;
+  flex-wrap:wrap;gap:12px;
+}
+.nav-logo{
+  font-family:'Unbounded',sans-serif;
+  font-size:12px;font-weight:700;letter-spacing:2px;
+  color:var(--gold);text-transform:uppercase;text-decoration:none;
+}
+.nav-cta{
+  background:var(--gold);color:var(--bg);
+  font-family:'DM Mono',monospace;
+  font-size:11px;letter-spacing:2px;text-transform:uppercase;
+  padding:10px 24px;text-decoration:none;border-radius:2px;
+  font-weight:500;transition:all 0.15s;
+}
+.nav-cta:hover{background:var(--gold2);transform:translateY(-1px)}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  display:flex;align-items:center;justify-content:center;
+  padding:120px 48px 80px;
+  position:relative;overflow:hidden;
+  text-align:center;
+}
+.hero-bg{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, #D4A42008 0%, transparent 60%),
+    radial-gradient(ellipse 40% 40% at 20% 80%, #2A8A7208 0%, transparent 50%),
+    radial-gradient(ellipse 40% 40% at 80% 80%, #7A4AB008 0%, transparent 50%);
+}
+.hero-grid{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(var(--rule) 1px, transparent 1px),
+    linear-gradient(90deg, var(--rule) 1px, transparent 1px);
+  background-size:60px 60px;
+  opacity:0.3;
+  mask-image:radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
+}
+.hero-inner{position:relative;max-width:860px;margin:0 auto}
+.hero-kicker{
+  font-family:'DM Mono',monospace;
+  font-size:10px;letter-spacing:5px;text-transform:uppercase;
+  color:var(--gold);margin-bottom:28px;
+  display:inline-flex;align-items:center;gap:12px;
+}
+.hero-kicker::before,.hero-kicker::after{
+  content:'';display:block;width:32px;height:1px;background:var(--gold);opacity:0.5;
+}
+.hero-title{
+  font-family:'Unbounded',sans-serif;
+  font-size:clamp(36px,6vw,80px);
+  font-weight:900;line-height:1.0;
+  letter-spacing:-0.02em;
+  color:var(--text);margin-bottom:12px;
+}
+.hero-title .line2{
+  font-weight:300;font-style:italic;
+  font-family:'Lora',serif;
+  font-size:clamp(28px,5vw,64px);
+  color:var(--gold);display:block;margin-top:8px;
+}
+.hero-sub{
+  font-size:17px;color:var(--text2);
+  max-width:560px;margin:28px auto 48px;
+  line-height:1.8;font-weight:400;
+}
+.hero-price-block{
+  display:inline-flex;align-items:baseline;gap:16px;
+  margin-bottom:40px;
+}
+.hero-price{
+  font-family:'Unbounded',sans-serif;
+  font-size:72px;font-weight:900;color:var(--gold);line-height:1;
+}
+.hero-was{
+  font-family:'DM Mono',monospace;
+  font-size:18px;color:var(--text3);text-decoration:line-through;
+}
+.hero-save{
+  font-family:'DM Mono',monospace;
+  font-size:12px;color:var(--teal);
+  background:#2A8A7215;border:1px solid #2A8A7230;
+  padding:4px 12px;border-radius:2px;margin-left:8px;
+}
+.hero-cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:48px}
+.btn-hero{
+  background:var(--gold);color:var(--bg);
+  font-family:'DM Mono',monospace;
+  font-size:12px;letter-spacing:3px;text-transform:uppercase;
+  padding:18px 48px;text-decoration:none;border-radius:2px;
+  font-weight:700;transition:all 0.2s;display:inline-block;
+}
+.btn-hero:hover{background:var(--gold2);transform:translateY(-2px);box-shadow:0 12px 48px #D4A42040}
+.btn-ghost{
+  color:var(--text3);font-family:'DM Mono',monospace;
+  font-size:11px;letter-spacing:2px;text-decoration:none;
+  border-bottom:1px solid var(--rule2);padding-bottom:2px;
+  text-transform:uppercase;transition:all 0.15s;align-self:center;
+}
+.btn-ghost:hover{color:var(--text2);border-color:var(--text3)}
+.hero-proof{
+  display:flex;justify-content:center;gap:40px;
+  flex-wrap:wrap;padding-top:32px;border-top:1px solid var(--rule);
+}
+.proof-item{text-align:center}
+.proof-num{
+  font-family:'Unbounded',sans-serif;
+  font-size:28px;font-weight:700;color:var(--text);line-height:1;margin-bottom:4px;
+}
+.proof-num em{color:var(--gold);font-style:normal}
+.proof-label{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--text3)}
+
+/* SECTIONS */
+.section{padding:96px 48px;border-top:1px solid var(--rule)}
+.section-inner{max-width:960px;margin:0 auto}
+.eyebrow{
+  font-family:'DM Mono',monospace;
+  font-size:9px;letter-spacing:5px;text-transform:uppercase;
+  color:var(--gold);margin-bottom:20px;
+}
+.section-title{
+  font-family:'Unbounded',sans-serif;
+  font-size:clamp(28px,4vw,48px);font-weight:700;
+  line-height:1.1;letter-spacing:-0.02em;margin-bottom:14px;
+}
+.section-sub{
+  font-size:16px;color:var(--text2);max-width:580px;
+  line-height:1.8;margin-bottom:56px;
+}
+
+/* PRODUCT STACK */
+.product-stack{display:flex;flex-direction:column;gap:2px}
+.product-row{
+  display:grid;grid-template-columns:4px 1fr;
+  background:var(--bg2);border:1px solid var(--rule);
+  border-radius:3px;overflow:hidden;
+  transition:border-color 0.2s;
+}
+.product-row:hover{border-color:var(--rule2)}
+.product-accent{background:var(--p-color)}
+.product-body{
+  display:grid;grid-template-columns:1fr auto;
+  gap:20px;padding:28px 32px;align-items:center;
+  flex-wrap:wrap;
+}
+@media(max-width:640px){.product-body{grid-template-columns:1fr}}
+.product-label{
+  font-family:'DM Mono',monospace;
+  font-size:9px;letter-spacing:3px;text-transform:uppercase;
+  color:var(--p-color);margin-bottom:8px;
+}
+.product-name{
+  font-family:'Unbounded',sans-serif;
+  font-size:18px;font-weight:700;color:var(--text);
+  margin-bottom:6px;line-height:1.2;
+}
+.product-desc{font-size:13px;color:var(--text2);line-height:1.7;max-width:520px}
+.product-includes{
+  display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;
+}
+.inc-chip{
+  font-family:'DM Mono',monospace;font-size:10px;
+  padding:4px 10px;border:1px solid var(--rule2);
+  border-radius:1px;color:var(--text3);
+}
+.product-price-col{text-align:right;flex-shrink:0}
+.product-price{
+  font-family:'Unbounded',sans-serif;
+  font-size:28px;font-weight:700;color:var(--text);line-height:1;
+}
+.product-price-label{
+  font-family:'DM Mono',monospace;font-size:9px;
+  letter-spacing:2px;color:var(--text3);margin-top:4px;text-transform:uppercase;
+}
+
+/* TOTAL ROW */
+.total-row{
+  background:var(--gold-dim);border:1px solid var(--gold);
+  border-radius:3px;padding:24px 32px;
+  display:flex;justify-content:space-between;align-items:center;
+  flex-wrap:wrap;gap:16px;margin-top:2px;
+}
+.total-label{
+  font-family:'DM Mono',monospace;font-size:11px;letter-spacing:3px;
+  text-transform:uppercase;color:var(--gold);
+}
+.total-prices{display:flex;align-items:baseline;gap:16px}
+.total-was{font-family:'DM Mono',monospace;font-size:16px;color:var(--text3);text-decoration:line-through}
+.total-now{font-family:'Unbounded',sans-serif;font-size:36px;font-weight:900;color:var(--gold)}
+.total-save{font-family:'DM Mono',monospace;font-size:11px;color:var(--teal)}
+
+/* COMPARISON */
+.compare-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:16px;
+  margin-top:48px;
+}
+@media(max-width:640px){.compare-grid{grid-template-columns:1fr}}
+.compare-card{
+  border:1px solid var(--rule);border-radius:4px;overflow:hidden;
+}
+.compare-head{
+  padding:20px 24px;border-bottom:1px solid var(--rule);
+}
+.compare-head-label{
+  font-family:'DM Mono',monospace;font-size:9px;
+  letter-spacing:3px;text-transform:uppercase;margin-bottom:6px;
+}
+.compare-head-title{
+  font-family:'Unbounded',sans-serif;
+  font-size:18px;font-weight:700;
+}
+.compare-body{padding:20px 24px}
+.compare-item{
+  display:flex;gap:10px;padding:10px 0;
+  border-bottom:1px solid var(--rule);font-size:13px;
+  line-height:1.5;
+}
+.compare-item:last-child{border-bottom:none}
+.compare-icon{flex-shrink:0;padding-top:2px;font-size:12px}
+.without .compare-head{background:var(--bg2)}
+.without .compare-head-label{color:var(--red)}
+.without .compare-head-title{color:var(--text)}
+.without .compare-icon{color:var(--red)}
+.without .compare-item{color:var(--text2)}
+.with-bundle .compare-head{background:#D4A42010}
+.with-bundle .compare-head-label{color:var(--gold)}
+.with-bundle .compare-head-title{color:var(--gold)}
+.with-bundle .compare-icon{color:var(--gold)}
+.with-bundle .compare-item{color:var(--text)}
+
+/* TESTIMONIALS */
+.test-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:16px;margin-top:48px;
+}
+.test-card{
+  padding:28px;background:var(--bg2);
+  border:1px solid var(--rule);border-radius:3px;
+  border-top:2px solid var(--gold);
+}
+.stars{color:var(--gold);font-size:12px;letter-spacing:3px;margin-bottom:16px}
+.test-card p{
+  font-size:15px;font-style:italic;color:var(--text2);
+  line-height:1.8;margin-bottom:18px;
+}
+.test-attr{
+  font-family:'DM Mono',monospace;font-size:9px;
+  letter-spacing:2px;color:var(--text3);text-transform:uppercase;
+}
+
+/* PRICING CARD */
+.pricing-card{
+  max-width:580px;margin:0 auto;
+  background:var(--bg2);border:1px solid var(--gold);
+  border-radius:4px;overflow:hidden;
+}
+.pricing-top{
+  background:linear-gradient(135deg,#1A1208 0%,#0E0C08 100%);
+  padding:48px 48px 36px;text-align:center;
+  border-bottom:1px solid var(--rule);
+}
+.pricing-kicker{
+  font-family:'DM Mono',monospace;font-size:9px;
+  letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;
+}
+.pricing-price{
+  font-family:'Unbounded',sans-serif;
+  font-size:80px;font-weight:900;color:var(--gold);line-height:1;margin-bottom:4px;
+}
+.pricing-was{
+  font-family:'DM Mono',monospace;font-size:14px;
+  color:var(--text3);text-decoration:line-through;margin-bottom:8px;
+}
+.pricing-save{
+  display:inline-block;
+  font-family:'DM Mono',monospace;font-size:11px;color:var(--teal);
+  background:#2A7A4A15;border:1px solid #2A7A4A30;
+  padding:5px 16px;border-radius:2px;
+}
+.pricing-body{padding:36px 48px}
+.feature-list{list-style:none;margin-bottom:32px}
+.feature-list li{
+  display:flex;gap:12px;padding:12px 0;
+  border-bottom:1px solid var(--rule);
+  font-size:13px;color:var(--text2);line-height:1.5;
+}
+.feature-list li:last-child{border-bottom:none}
+.check{color:var(--gold);flex-shrink:0;padding-top:2px}
+.btn-purchase{
+  display:block;width:100%;
+  background:var(--gold);color:var(--bg);
+  font-family:'DM Mono',monospace;font-size:12px;letter-spacing:3px;
+  text-transform:uppercase;padding:20px;text-align:center;
+  text-decoration:none;border-radius:2px;font-weight:700;
+  transition:all 0.2s;border:none;cursor:pointer;
+}
+.btn-purchase:hover{background:var(--gold2);transform:translateY(-1px);box-shadow:0 8px 32px #D4A42040}
+.guarantee{
+  text-align:center;margin-top:18px;
+  font-family:'DM Mono',monospace;font-size:10px;
+  letter-spacing:1px;color:var(--text3);
+}
+
+/* CTA SECTION */
+.cta-section{
+  padding:120px 48px;text-align:center;
+  position:relative;overflow:hidden;
+}
+.cta-bg{
+  position:absolute;inset:0;
+  background:radial-gradient(ellipse 60% 60% at 50% 50%,#D4A42010 0%,transparent 70%);
+}
+.cta-section h2{
+  font-family:'Unbounded',sans-serif;
+  font-size:clamp(28px,5vw,56px);font-weight:900;
+  line-height:1.05;letter-spacing:-0.02em;
+  color:var(--text);margin-bottom:16px;position:relative;
+}
+.cta-section h2 em{color:var(--gold);font-style:italic;font-family:'Lora',serif;font-weight:400}
+.cta-section p{
+  font-size:16px;color:var(--text2);margin-bottom:40px;
+  max-width:460px;margin-left:auto;margin-right:auto;
+  line-height:1.8;position:relative;
+}
+.cta-note{
+  margin-top:20px;font-family:'DM Mono',monospace;
+  font-size:10px;color:var(--text3);letter-spacing:1px;position:relative;
+}
+
+/* FAQ */
+.faq-list{margin-top:48px}
+.faq-item{border-bottom:1px solid var(--rule)}
+.faq-item:first-child{border-top:1px solid var(--rule)}
+.faq-q{
+  display:flex;justify-content:space-between;align-items:flex-start;
+  gap:16px;padding:22px 0;cursor:pointer;
+  font-family:'Unbounded',sans-serif;font-size:15px;
+  font-weight:400;color:var(--text);line-height:1.4;
+  background:none;border:none;width:100%;text-align:left;
+}
+.faq-toggle{color:var(--gold);font-size:22px;font-weight:300;line-height:1;flex-shrink:0}
+.faq-a{
+  display:none;padding-bottom:22px;
+  font-size:14px;color:var(--text2);line-height:1.8;
+}
+
+/* FOOTER */
+footer{
+  padding:36px 48px;border-top:1px solid var(--rule);
+  display:flex;justify-content:space-between;align-items:center;
+  flex-wrap:wrap;gap:12px;
+}
+.footer-logo{font-family:'Unbounded',sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;color:var(--text3)}
+.footer-links{display:flex;gap:24px}
+.footer-links a{font-family:'DM Mono',monospace;font-size:10px;color:var(--text3);text-decoration:none;letter-spacing:1px}
+.footer-links a:hover{color:var(--text2)}
+
+/* ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.hero-inner>*{animation:fadeUp 0.5s ease both;opacity:0}
+.hero-kicker{animation-delay:0.05s}
+.hero-title{animation-delay:0.12s}
+.hero-sub{animation-delay:0.2s}
+.hero-price-block{animation-delay:0.26s}
+.hero-cta-row{animation-delay:0.32s}
+.hero-proof{animation-delay:0.38s}
+
+@media(max-width:640px){
+  .hero{padding:100px 24px 60px}
+  .section{padding:64px 24px}
+  nav{padding:14px 24px}
+  footer{padding:28px 24px}
+  .pricing-top,.pricing-body{padding:32px 28px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-logo">Marketing Toolkit</a>
+  <a href="https://malikreagan.gumroad.com/l/marketing-toolkit" class="nav-cta">Get the Bundle — $247</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div class="hero-kicker">The Complete Marketing Manager Toolkit</div>
+    <h1 class="hero-title">
+      Everything you need to plan,
+      <span class="line2">prove, and protect your budget.</span>
+    </h1>
+    <p class="hero-sub">
+      Four tools. One system. Built for marketing managers who are done guessing, done losing budget meetings, and done pulling data manually every month.
+    </p>
+    <div class="hero-price-block">
+      <div class="hero-was">$240</div>
+      <div class="hero-price">$247</div>
+      <span class="hero-save">Bundle saves you $45/mo</span>
+    </div>
+    <div class="hero-cta-row">
+      <a href="https://malikreagan.gumroad.com/l/marketing-toolkit" class="btn-hero">Get the Complete Toolkit — $247</a>
+      <a href="#whats-inside" class="btn-ghost">See what's inside ↓</a>
+    </div>
+    <div class="hero-proof">
+      <div class="proof-item">
+        <div class="proof-num"><em>4</em></div>
+        <div class="proof-label">Products</div>
+      </div>
+      <div class="proof-item">
+        <div class="proof-num"><em>$45</em></div>
+        <div class="proof-label">You Save</div>
+      </div>
+      <div class="proof-item">
+        <div class="proof-num"><em>50+</em></div>
+        <div class="proof-label">AI Prompts</div>
+      </div>
+      <div class="proof-item">
+        <div class="proof-num"><em>9</em></div>
+        <div class="proof-label">CFO Objections Answered</div>
+      </div>
+      <div class="proof-item">
+        <div class="proof-num"><em>7</em></div>
+        <div class="proof-label">Day Guarantee</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT'S INSIDE -->
+<section class="section" id="whats-inside">
+  <div class="section-inner">
+    <p class="eyebrow">What's inside</p>
+    <h2 class="section-title">Four tools.<br />One complete system.</h2>
+    <p class="section-sub">Each tool solves a different part of the same problem: marketing that's impossible to ignore, cut, or question.</p>
+
+    <div class="product-stack">
+
+      <div class="product-row" style="--p-color:var(--blue)">
+        <div class="product-accent"></div>
+        <div class="product-body">
+          <div>
+            <div class="product-label">Tool 01 — Budget Planning</div>
+            <div class="product-name">Marketing Budget Allocator</div>
+            <div class="product-desc">Enter your budget, industry, goal, and company stage. Get a channel-by-channel allocation brief with ROI benchmarks, risk ratings, 30-day quick wins, and export to PDF — in 60 seconds.</div>
+            <div class="product-includes">
+              <span class="inc-chip">Interactive HTML tool</span>
+              <span class="inc-chip">10 industries</span>
+              <span class="inc-chip">4 goals</span>
+              <span class="inc-chip">PDF export</span>
+            </div>
+          </div>
+          <div class="product-price-col">
+            <div class="product-price">$47</div>
+            <div class="product-price-label">Included</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-row" style="--p-color:var(--gold)">
+        <div class="product-accent"></div>
+        <div class="product-body">
+          <div>
+            <div class="product-label">Tool 02 — ROI Reporting</div>
+            <div class="product-name">Marketing ROI Proof Kit</div>
+            <div class="product-desc">Executive dashboard, 12-slide QBR deck guide, and budget defense script. Enter your numbers, get a board-ready report. Walk into any CFO meeting prepared — with the data, the narrative, and the answers.</div>
+            <div class="product-includes">
+              <span class="inc-chip">Executive dashboard</span>
+              <span class="inc-chip">12-slide QBR guide</span>
+              <span class="inc-chip">9 objections answered</span>
+              <span class="inc-chip">PDF export</span>
+            </div>
+          </div>
+          <div class="product-price-col">
+            <div class="product-price">$147</div>
+            <div class="product-price-label">Included</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-row" style="--p-color:var(--teal)">
+        <div class="product-accent"></div>
+        <div class="product-body">
+          <div>
+            <div class="product-label">Tool 03 — Data Collection</div>
+            <div class="product-name">5-Platform Data Pull Cheat Sheet</div>
+            <div class="product-desc">The fastest export path for GA4, Meta Ads, LinkedIn, HubSpot, and Google Ads — plus a Google Sheets consolidation template with 8 copy-paste formulas. Pull all 5 platforms in under 8 minutes.</div>
+            <div class="product-includes">
+              <span class="inc-chip">5 platform guides</span>
+              <span class="inc-chip">8 formulas</span>
+              <span class="inc-chip">Sheets template</span>
+              <span class="inc-chip">One-click copy</span>
+            </div>
+          </div>
+          <div class="product-price-col">
+            <div class="product-price">$19</div>
+            <div class="product-price-label">Included</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-row" style="--p-color:var(--violet)">
+        <div class="product-accent"></div>
+        <div class="product-body">
+          <div>
+            <div class="product-label">Tool 04 — Content Planning</div>
+            <div class="product-name">Content Planning OS</div>
+            <div class="product-desc">Editorial calendar, 6 brief templates, 50+ AI prompts, and a capacity planner. Plan a full month of content in one session. Brief your team or AI tool in 3 minutes. Know before you commit whether the plan is actually achievable.</div>
+            <div class="product-includes">
+              <span class="inc-chip">Content calendar</span>
+              <span class="inc-chip">6 brief templates</span>
+              <span class="inc-chip">50+ prompts</span>
+              <span class="inc-chip">Capacity planner</span>
+            </div>
+          </div>
+          <div class="product-price-col">
+            <div class="product-price">$29<span style="font-size:16px;font-weight:400">/mo</span></div>
+            <div class="product-price-label">Included</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="total-row">
+        <div class="total-label">Bundle Total</div>
+        <div>
+          <div class="total-save">You save $45 vs buying separately</div>
+          <div class="total-prices">
+            <div class="total-was">$292</div>
+            <div class="total-now">$247</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WITHOUT / WITH -->
+<section class="section">
+  <div class="section-inner">
+    <p class="eyebrow">The difference</p>
+    <h2 class="section-title">Before and after<br />the toolkit.</h2>
+    <div class="compare-grid">
+      <div class="compare-card without">
+        <div class="compare-head">
+          <div class="compare-head-label">Without the toolkit</div>
+          <div class="compare-head-title">Every week, the same problems.</div>
+        </div>
+        <div class="compare-body">
+          <div class="compare-item"><span class="compare-icon">✗</span>3 hours pulling data from 5 platforms manually</div>
+          <div class="compare-item"><span class="compare-icon">✗</span>Budget allocated by gut feel and last quarter's numbers</div>
+          <div class="compare-item"><span class="compare-icon">✗</span>QBR prep takes 2 days and still feels weak</div>
+          <div class="compare-item"><span class="compare-icon">✗</span>Content planning is a chaotic Slack thread</div>
+          <div class="compare-item"><span class="compare-icon">✗</span>Budget gets questioned every quarter</div>
+          <div class="compare-item"><span class="compare-icon">✗</span>No repeatable system for any of it</div>
+        </div>
+      </div>
+      <div class="compare-card with-bundle">
+        <div class="compare-head">
+          <div class="compare-head-label">With the complete toolkit</div>
+          <div class="compare-head-title">A system for every recurring problem.</div>
+        </div>
+        <div class="compare-body">
+          <div class="compare-item"><span class="compare-icon">✓</span>All 5 platforms exported and consolidated in 8 minutes</div>
+          <div class="compare-item"><span class="compare-icon">✓</span>Channel allocation based on industry benchmarks and your goals</div>
+          <div class="compare-item"><span class="compare-icon">✓</span>Board-ready ROI report generated in 60 seconds</div>
+          <div class="compare-item"><span class="compare-icon">✓</span>Content planned, briefed, and capacity-checked in one session</div>
+          <div class="compare-item"><span class="compare-icon">✓</span>CFO objections answered before they're asked</div>
+          <div class="compare-item"><span class="compare-icon">✓</span>Same system, every month. No reinventing the wheel.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <div class="section-inner">
+    <p class="eyebrow">What people say</p>
+    <h2 class="section-title">Used in real meetings.<br />Real budgets on the line.</h2>
+    <div class="test-grid">
+      <div class="test-card">
+        <div class="stars">★★★★★</div>
+        <p>"Walked into my Q3 board presentation with the ROI dashboard output and the defense script on my phone. First time I've ever left a budget meeting with an increase."</p>
+        <p class="test-attr">Marketing Director · B2B SaaS</p>
+      </div>
+      <div class="test-card">
+        <div class="stars">★★★★★</div>
+        <p>"The data pull cheat sheet alone saved me 6 hours in the first month. I didn't realise how much time I was wasting on manual exports until I wasn't doing it anymore."</p>
+        <p class="test-attr">Head of Marketing · E-commerce</p>
+      </div>
+      <div class="test-card">
+        <div class="stars">★★★★★</div>
+        <p>"I use the content OS for every client I onboard as a fractional CMO. Brief templates and prompt library get me from blank page to full month plan in under 2 hours."</p>
+        <p class="test-attr">Fractional CMO</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section" id="pricing">
+  <div class="section-inner">
+    <p class="eyebrow" style="text-align:center">Bundle Pricing</p>
+    <h2 class="section-title" style="text-align:center;margin-bottom:48px">One purchase.<br />The complete system.</h2>
+    <div class="pricing-card">
+      <div class="pricing-top">
+        <div class="pricing-kicker">Complete Marketing Manager Toolkit</div>
+        <div class="pricing-price">$247</div>
+        <div class="pricing-was">$292 if bought separately</div>
+        <div class="pricing-save">You save $45</div>
+      </div>
+      <div class="pricing-body">
+        <ul class="feature-list">
+          <li><span class="check">✦</span>Marketing Budget Allocator — channel allocation in 60 seconds</li>
+          <li><span class="check">✦</span>Marketing ROI Proof Kit — dashboard, QBR guide & defense script</li>
+          <li><span class="check">✦</span>5-Platform Data Pull Cheat Sheet — GA4, Meta, LinkedIn, HubSpot, Google Ads</li>
+          <li><span class="check">✦</span>Content Planning OS — calendar, briefs, 50+ prompts & capacity planner</li>
+          <li><span class="check">✦</span>All tools work in any browser — no install, no login</li>
+          <li><span class="check">✦</span>Lifetime access to all four tools</li>
+          <li><span class="check">✦</span>Free updates as new features are added</li>
+        </ul>
+        <a href="https://malikreagan.gumroad.com/l/marketing-toolkit" class="btn-purchase">
+          Get the Complete Toolkit — $247
+        </a>
+        <p class="guarantee">7-day money-back guarantee · Instant download · No subscription</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="section-inner">
+    <p class="eyebrow">FAQ</p>
+    <h2 class="section-title" style="margin-bottom:0">Questions.</h2>
+    <div class="faq-list" id="faqList"></div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-section">
+  <div class="cta-bg"></div>
+  <h2>Stop rebuilding the wheel<br />every <em>single quarter.</em></h2>
+  <p>One purchase. Four tools. A system that works the same way every month — so you can spend your time on strategy, not admin.</p>
+  <a href="https://malikreagan.gumroad.com/l/marketing-toolkit" class="btn-hero" style="position:relative">
+    Get the Complete Toolkit — $247
+  </a>
+  <p class="cta-note" style="position:relative">One-time payment · 7-day guarantee · Instant download</p>
+</section>
+
+<footer>
+  <div class="footer-logo">Marketing Toolkit</div>
+  <div class="footer-links">
+    <a href="#">Privacy</a>
+    <a href="#">Refund Policy</a>
+    <a href="mailto:hello@malikreagan.com">Contact</a>
+  </div>
+</footer>
+
+<script>
+const FAQS = [
+  {
+    q:"Do I get all four tools immediately after purchase?",
+    a:"Yes. Gumroad delivers all four files instantly after payment. You'll receive a download email with access to the Budget Allocator, ROI Proof Kit, Data Pull Cheat Sheet, and Content Planning OS."
+  },
+  {
+    q:"Do the tools require any software or subscriptions?",
+    a:"No. All four tools are delivered as single HTML files that open in any browser — Chrome, Safari, Firefox, Edge. No install, no login, no subscription. Works offline too (except for AI-powered features that call the Claude API)."
+  },
+  {
+    q:"What's the difference between buying the bundle vs individual products?",
+    a:"You save $45 and get a single download instead of four separate purchases. The bundle also includes the Content Planning OS membership at a one-time price rather than $29/month — so the longer you use it, the more value the bundle represents."
+  },
+  {
+    q:"I already bought one of the products. Can I upgrade to the bundle?",
+    a:"Yes — email with your original receipt and we'll discount the bundle by what you already paid. No one should pay twice for the same product."
+  },
+  {
+    q:"What's the refund policy?",
+    a:"7-day money-back guarantee on the bundle. If you open the tools and they're not what you expected, email within 7 days for a full refund. No questions, no friction."
+  },
+  {
+    q:"Are these tools updated over time?",
+    a:"Yes. New industries and features are added to the Budget Allocator and ROI Proof Kit regularly. The Content Planning OS gets new prompt packs added. All updates are free for existing customers — you'll receive an email when a new version is available."
+  }
+];
+
+const faqList = document.getElementById('faqList');
+FAQS.forEach((f,i) => {
+  const div = document.createElement('div');
+  div.className = 'faq-item';
+  div.innerHTML = `
+    <button class="faq-q" onclick="toggleFaq(${i})">
+      ${f.q}
+      <span class="faq-toggle" id="ftog${i}">+</span>
+    </button>
+    <div class="faq-a" id="fans${i}">${f.a}</div>`;
+  faqList.appendChild(div);
+});
+
+function toggleFaq(i) {
+  const ans = document.getElementById('fans'+i);
+  const tog = document.getElementById('ftog'+i);
+  const open = ans.style.display === 'block';
+  document.querySelectorAll('.faq-a').forEach(a => a.style.display='none');
+  document.querySelectorAll('.faq-toggle').forEach(t => t.textContent='+');
+  if (!open) { ans.style.display='block'; tog.textContent='−'; }
+}
+
+// scroll fade
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity='1';
+      e.target.style.transform='translateY(0)';
+    }
+  });
+}, { threshold:0.06 });
+document.querySelectorAll('.section').forEach(s => {
+  s.style.opacity='0';
+  s.style.transform='translateY(24px)';
+  s.style.transition='opacity 0.55s ease, transform 0.55s ease';
+  obs.observe(s);
+});
+</script>
+</body>
+</html>
